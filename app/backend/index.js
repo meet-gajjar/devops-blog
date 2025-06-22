@@ -20,3 +20,6 @@ app.get('/', (req, res) => {
     res.send('Blog API is running');
 });
 
+const postRoutes = require('./routes/posts');
+app.use('/api/posts', postRoutes);
+
